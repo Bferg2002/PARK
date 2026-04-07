@@ -143,4 +143,17 @@ public class ParkingGarage {
         }
         return false;
     }
+
+    // Returns all parked vehicles (does NOT change existing logic)
+    public java.util.List<Vehicle> getAllParkedVehicles() {
+        java.util.List<Vehicle> vehicles = new java.util.ArrayList<>();
+
+        for (ParkingSpot spot : spots) {
+            if (!spot.isEmpty()) {
+                vehicles.add(spot.getVehicle());
+            }
+        }
+
+        return vehicles;
+    }
 }
