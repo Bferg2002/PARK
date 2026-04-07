@@ -11,8 +11,5 @@ public class HelloController {
         return "PARK backend is working!";
     }
 
-    @GetMapping("/test")
-    public String test() {
-        return "Test endpoint working";
-    }
+
 }
